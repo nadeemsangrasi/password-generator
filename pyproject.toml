@@ -1,0 +1,20 @@
+[project]
+name = "password-generator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "nadeem", email = "nadeemsangrasi903@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.43.1",
+]
+
+[project.scripts]
+password-generator = "password_generator:main"
+run-pass = "password_generator.main:start"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
