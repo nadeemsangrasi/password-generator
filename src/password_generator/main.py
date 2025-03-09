@@ -17,10 +17,10 @@ def main():
         st.error("Please provide valid length")
         return
   
-    use_uppercase = st.checkbox("Include Uppercase Letters", value=random.choice([True,False]))
-    use_lowercase = st.checkbox("Include Lowercase Letters", value=random.choice([True,False]))
-    use_numbers = st.checkbox("Include Numbers", value=random.choice([True,False]))
-    use_special = st.checkbox("Include Special Characters", value=random.choice([True,False]))
+    use_uppercase = st.checkbox("Include Uppercase Letters", value=False)
+    use_lowercase = st.checkbox("Include Lowercase Letters", value=True)
+    use_numbers = st.checkbox("Include Numbers", value=False)
+    use_special = st.checkbox("Include Special Characters", value=True)
 
     password_chars=""
 
